@@ -11,19 +11,21 @@ namespace Final1
     {
         static bool check(int x)
         {
-            for (int i = 3; i < x; i++)
+            if (x == 2 || x == 1)
             {
-                if (i == 2 && i == 1)
+                return true;
+            }
+            else {
+                for (int i = 3; i < x; i++)
                 {
-                    return true;
-                }
-                else if (x % i == 0)
-                {
-                    return false;
-                }
-                else
-                {
-                    return true;
+                    if (x % i == 0)
+                    {
+                        return false;
+                    }
+                    else
+                    {
+                        return true;
+                    }
                 }
             }
             return false;
