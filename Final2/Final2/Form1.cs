@@ -73,7 +73,7 @@ namespace Final2
             /*Button btn = sender as Button;
             for (int i = 0; i <= 16; i++)
             {
-                if (buttonArray[i].Location.X == btn.Location.X && buttonArray[i].Location.Y ==btn.Location.Y)
+                if (buttonArray[i].Location.X == btn.Location.X && buttonArray[i].Location.Y == btn.Location.Y)
                 {
                     textBox1.Text = buttonArray[2].Text;
                 }
