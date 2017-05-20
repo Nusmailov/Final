@@ -28,13 +28,15 @@ namespace Final4_2
         {
 
         }
-
+        int i = 0;
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
             mouseClicked = true;
-            draw.location.X = e.Location.X;
-            draw.location.Y = e.Location.Y;
+            draw.location[i].X = e.Location.X;
+            draw.location[i].Y = e.Location.Y;
             draw.Draw(pictureBox1.CreateGraphics());
+            i++;
+          //  Refresh();
         }
         private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
         {
@@ -43,7 +45,17 @@ namespace Final4_2
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            draw.location.Y++;
+
+            for (int j = 0; j < i; j++)
+            {
+                draw.location[j].Y++;
+            }
+            //Refresh();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
