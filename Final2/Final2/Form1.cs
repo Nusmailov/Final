@@ -55,7 +55,7 @@ namespace Final2
         }
         private void button_Click(object sender, EventArgs e)
         {
-            textBox1.Text += buttonArray[1];
+           // textBox1.Text = buttonArray[1];
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -70,14 +70,14 @@ namespace Final2
 
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
-            /*Button btn = sender as Button;
+            Button btn = sender as Button;
             for (int i = 0; i <= 16; i++)
             {
                 if (buttonArray[i].Location.X == btn.Location.X && buttonArray[i].Location.Y == btn.Location.Y)
                 {
-                    textBox1.Text = buttonArray[2].Text;
+                    textBox1.Text += buttonArray[i].Text;
                 }
-            }*/
+            }
         }
     }
 }

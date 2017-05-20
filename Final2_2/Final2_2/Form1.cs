@@ -25,5 +25,15 @@ namespace Final2_2
         {
             textBox1.Text = button2.Text;
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }
