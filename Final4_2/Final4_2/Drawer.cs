@@ -20,6 +20,7 @@ namespace Final4_2
         public void Draw(Graphics g)
         {
             g.FillEllipse(solid, location[i].X, location[i].Y, lenght, lenght);
+            i++;
         }
        
     }

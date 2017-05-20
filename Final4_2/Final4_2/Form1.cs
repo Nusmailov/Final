@@ -29,33 +29,30 @@ namespace Final4_2
 
         }
         int i = 0;
-        private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_MouseDown_1(object sender, MouseEventArgs e)
         {
             mouseClicked = true;
             draw.location[i].X = e.Location.X;
             draw.location[i].Y = e.Location.Y;
             draw.Draw(pictureBox1.CreateGraphics());
             i++;
-          //  Refresh();
         }
-        private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
+        private void pictureBox1_MouseUp_1(object sender, MouseEventArgs e)
         {
             mouseClicked = false;
-        }
-
+        } 
         private void timer1_Tick(object sender, EventArgs e)
         {
-
             for (int j = 0; j < i; j++)
             {
                 draw.location[j].Y++;
             }
-            //Refresh();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
+            Refresh();
         }
     }
 }
