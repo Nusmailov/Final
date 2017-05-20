@@ -30,7 +30,7 @@ namespace Final2
                 buttonArray[i].Size = new Size(60, 30);
                 buttonArray[i].Location = new Point(x, y);
                 buttonArray[i].Text = c;
-                // buttonArray[i].Click += button_click;
+                buttonArray[i].Click += button_click;
                 this.Controls.Add(buttonArray[i]);
                 x += 65;
                 if (x > 250)
@@ -39,10 +39,6 @@ namespace Final2
                     y += 34;
                 }
             }
-            /*for (int i = 1; i < 17; i++)
-            {
-                buttonArray[i].Click += button_click;
-            }*/
         }
         private void button_click(object sender, MouseEventArgs e)
         {
