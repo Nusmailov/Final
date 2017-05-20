@@ -14,7 +14,7 @@ namespace Final4_2
         public bool mouseClicked = true;
         public int a = 1;
         public Point p = new Point(0, 0);
-        public Point[] location = new Point[30];
+        public Point[] location = new Point[1000];
         SolidBrush solid = new SolidBrush(Color.Red);
         public int i = 0;
         public void Draw(Graphics g)

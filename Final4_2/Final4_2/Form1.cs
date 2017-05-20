@@ -15,6 +15,7 @@ namespace Final4_2
         public Form1()
         {
             InitializeComponent();
+
         }
         Drawer draw = new Drawer();
         public int a = 1;
