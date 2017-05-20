@@ -26,7 +26,7 @@ namespace Final2
         string v = "2";
         private void Form1_Load(object sender, EventArgs e)
         {
-            for (int i = 1; i <= 16; i++)
+            for (int i = 1; i <= 9; i++)
             {
                 buttonArray[i] = new Button();
                 buttonArray[i].Size = new Size(60, 30);
@@ -46,7 +46,7 @@ namespace Final2
                 buttonArray[i].Click += button_Click;
                 this.Controls.Add(buttonArray[i]);
                 x += 65;
-                if (x > 250)
+                if (x > 190)
                 {
                     x = 30;
                     y += 34;
@@ -74,7 +74,7 @@ namespace Final2
             {
                 if (buttonArray[i].Location.X == e.Location.X && buttonArray[i].Location.Y == e.Location.Y)
                 {
-                    textBox1.Text = buttonArray[i].Text;
+                    textBox1.Text += buttonArray[i].Text;
                 }
             }
         }
