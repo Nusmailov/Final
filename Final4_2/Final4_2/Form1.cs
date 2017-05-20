@@ -36,7 +36,6 @@ namespace Final4_2
             draw.location.Y = e.Location.Y;
             draw.Draw(pictureBox1.CreateGraphics());
         }
-
         private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
         {
             mouseClicked = false;
