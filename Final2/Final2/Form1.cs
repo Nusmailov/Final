@@ -22,6 +22,8 @@ namespace Final2
         int x = 30;
         int y = 30;
         string c = "0";
+        string d = "1";
+        string v = "2";
         private void Form1_Load(object sender, EventArgs e)
         {
             for (int i = 1; i <= 16; i++)
@@ -29,8 +31,19 @@ namespace Final2
                 buttonArray[i] = new Button();
                 buttonArray[i].Size = new Size(60, 30);
                 buttonArray[i].Location = new Point(x, y);
-                buttonArray[i].Text = c;
-                buttonArray[i].Click += button_click;
+                if (i % 2 == 0)
+                {
+                    buttonArray[i].Text = d;
+                }
+                else if (i % 3 == 0)
+                {
+                    buttonArray[i].Text = v;
+                }
+                else
+                {
+                    buttonArray[i].Text = c;
+                }
+                buttonArray[i].Click += button_Click;
                 this.Controls.Add(buttonArray[i]);
                 x += 65;
                 if (x > 250)
@@ -40,12 +53,17 @@ namespace Final2
                 }
             }
         }
-        private void button_click(object sender, MouseEventArgs e)
+        private void button_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = buttonArray[2].Text;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
